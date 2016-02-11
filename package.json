@@ -34,6 +34,6 @@
   },
   "scripts": {
     "prepublish": "npm run build",
-    "build": "coffee -p -b src/index.coffee > index.js"
+    "build": "echo '#!/usr/bin/env node' > index.js && coffee -p -b src/index.coffee >> index.js"
   }
 }
