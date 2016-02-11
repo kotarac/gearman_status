@@ -1,0 +1,39 @@
+{
+  "name": "gearman_status",
+  "version": "0.0.0",
+  "description": "Gearman status check CLI.",
+  "homepage": "https://github.com/kotarac/gearman_status",
+  "bugs": "https://github.com/kotarac/gearman_status/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kotarac/gearman_status.git"
+  },
+  "keywords": [
+    "gearman"
+  ],
+  "author": {
+    "name": "Stipe Kotarac",
+    "email": "stipe@kotarac.net",
+    "url": "https://github.com/kotarac"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "bin": "index.js",
+  "dependencies": {
+    "log-update": "^1.0.2",
+    "minimist": "^1.2.0",
+    "node-netcat": "^1.4.8",
+    "text-table": "^0.2.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "coffee -p -b src/index.coffee > index.js"
+  }
+}
