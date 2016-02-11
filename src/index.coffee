@@ -47,7 +47,7 @@ log = (args...) -> logUpdate args...
 
 
 client.on 'open', -> send()
-client.on 'error', (err) -> console.error "#{err}"
+client.on 'error', (err) -> console.error "ERROR: #{err.message}" if err?.message
 client.on 'data', (data) ->
 	res = data.toString 'ascii'
 	log processResponse(res)
