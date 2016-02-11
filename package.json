@@ -1,6 +1,6 @@
 {
   "name": "gearman_status",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Gearman status check CLI.",
   "homepage": "https://github.com/kotarac/gearman_status",
   "bugs": "https://github.com/kotarac/gearman_status/issues",
