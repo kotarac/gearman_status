@@ -20,17 +20,17 @@
   "main": "index.js",
   "bin": "index.js",
   "dependencies": {
-    "log-update": "^1.0.2",
+    "log-update": "^2.0.0",
     "minimist": "^1.2.0",
     "node-netcat": "^1.4.8",
     "text-table": "^0.2.0"
   },
   "devDependencies": {
-    "coffee-script": "^1.10.0"
+    "coffee-script": "^1.12.6"
   },
   "engines": {
     "node": ">=0.10.0",
-    "npm": ">=1.2.10"
+    "npm": ">=2"
   },
   "scripts": {
     "prepublish": "npm run build",
