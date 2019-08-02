@@ -20,20 +20,20 @@
   "main": "index.js",
   "bin": "index.js",
   "dependencies": {
-    "log-update": "^2.0.0",
+    "log-update": "^3.2.0",
     "minimist": "^1.2.0",
     "node-netcat": "^1.4.8",
     "text-table": "^0.2.0"
   },
   "devDependencies": {
-    "coffee-script": "^1.12.6"
+    "coffeescript": "^2.4.1"
   },
   "engines": {
-    "node": ">=0.10.0",
-    "npm": ">=2"
+    "node": ">=6",
+    "yarn": ">=1"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "yarn run build",
     "build": "echo '#!/usr/bin/env node' > index.js && coffee -p -b src/index.coffee >> index.js"
   }
 }
