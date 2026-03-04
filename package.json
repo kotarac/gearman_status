@@ -30,10 +30,10 @@
   },
   "engines": {
     "node": ">=10",
-    "yarn": ">=1"
+    "pnpm": ">=10"
   },
   "scripts": {
-    "prepublish": "yarn run build",
+    "prepublish": "pnpm run build",
     "build": "echo '#!/usr/bin/env node' > index.js && coffee -p -b src/index.coffee >> index.js"
   }
 }
