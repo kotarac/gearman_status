@@ -19,21 +19,20 @@
   "license": "MIT",
   "main": "index.js",
   "bin": "index.js",
+  "engines": {
+    "node": ">=18",
+    "npm": ">=11"
+  },
   "dependencies": {
     "log-update": "^4.0.0",
     "minimist": "^1.2.5",
-    "node-netcat": "^1.4.8",
     "text-table": "^0.2.0"
   },
   "devDependencies": {
-    "coffeescript": "^2.5.1"
-  },
-  "engines": {
-    "node": ">=10",
-    "yarn": ">=1"
+    "@biomejs/biome": "^2.4.6"
   },
   "scripts": {
-    "prepublish": "yarn run build",
-    "build": "echo '#!/usr/bin/env node' > index.js && coffee -p -b src/index.coffee >> index.js"
+    "fmt": "biome check --write .",
+    "test": "node --test"
   }
 }
